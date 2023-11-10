@@ -1,6 +1,5 @@
 :root {
   /*COLOR VARIABLEA=========================================================*/
-
   --color-primary: var(--color-gradient-pink);
   --color-secondary: var(--color-purple);
   --color-tertiary: var(--color-blue-background);
@@ -18,7 +17,7 @@
   );
 
   --color-pink: #800080;
-  --color-pink-gradient: linear-gradient(180deg, #c23881 0%, #7e2973 100%);
+  --color-pink-gradient: linear-gradient(90deg, #8715E4 0%, #800080 100%);;
 
   --color-blue-light: rgba(53, 59, 95, 1);
   --color-blue-medium: #22284f;
@@ -38,9 +37,21 @@
   --color-text-tertiary: var(--color-white);
 
   /**FONT VARIABLE==========================================================*/
-  --font-primary: var(--font-paragraph);
-  --font-seconday: var(--font-heading);
+  --font-primary-en: var(--Montserrat-Regular);
+  --font-secondary-en: var(--Baloo2-Regular);
+  
+  --Baloo2-Regular: 'Baloo2-Regular', sans-serif;
+  --Baloo2-SemiBold: 'Baloo2-SemiBold', sans-serif;
+  --Baloo2-Bold: 'Baloo2-Bold', sans-serif;
+  --Baloo2-ExtraBold: 'Baloo2-ExtraBold', sans-serif;
 
-  --font-paragraph: "Montserrat", sans-serif;
-  --font-heading: "Baloo 2", sans-serif;
+  --Montserrat-Regular: 'Montserrat-Regular', sans-serif;
+  --Montserrat-ExtraLight: 'Montserrat-ExtraLight', sans-serif;
+  --Montserrat-Light: 'Montserrat-Light', sans-serif;
+  --Montserrat-SemiBold: 'Montserrat-SemiBold', sans-serif;
+  --Montserrat-Bold: 'Montserrat-Bold', sans-serif;
+
+  --font-size-primary: 45px;
+  --font-size-secondary: 16px;
+  --font-size-tertiary: 14px;
 }
