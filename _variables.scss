@@ -1,32 +1,46 @@
 :root {
-  //COLOR VARIABLEA
+  /*COLOR VARIABLEA=========================================================*/
+
   --color-primary: var(--color-gradient-pink);
   --color-secondary: var(--color-purple);
   --color-tertiary: var(--color-blue-background);
 
-  //Gradient Color
-  --color-gradient-purple: linear-gradient(
-    to bottom,
-    rgba(128, 0, 128, 1),
-    rgba(230, 34, 116, 1),
-    rgba(249, 206, 0, 1)
-  );
-  --color-gradient-pink: linear-gradient(180deg, #c23881 0%, #7e2973 100%);
-
-  //General Colors
   --color-white: #ffffff;
   --color-black: #000000;
 
   --color-purple: #8715e4;
   --color-purple-light: #8715e480;
+  --color-purple-gradient: linear-gradient(
+    to bottom,
+    rgba(128, 0, 128, 1),
+    rgba(230, 34, 116, 1),
+    rgba(249, 206, 0, 1)
+  );
+
+  --color-pink: #800080;
+  --color-pink-gradient: linear-gradient(180deg, #c23881 0%, #7e2973 100%);
 
   --color-blue-light: rgba(53, 59, 95, 1);
   --color-blue-medium: #22284f;
   --color-blue-deep: #11152e;
   --color-blue-background: #030720;
+  --color-blue-form: #11152e;
+  --color-blue-card: #030720;
+  --color-blue-card-light: #11152E;
+  --color-blue-button: #01051F;
+  --color-blue-button-border:#353B5F;
+  
+  --color-gray-card: #373d60;
+  --color-gray-border: #3a3f5a;
 
-  //TEXT COLOR
-  --text-color-primary: var(--color-white);
-  --tex-color-secondary: var(--color-black);
-  --text--color-tertiary: var(--color-white);
+  --color-text-primary: var(--color-white);
+  --color-tex-secondary: var(--color-black);
+  --color-text-tertiary: var(--color-white);
+
+  /**FONT VARIABLE==========================================================*/
+  --font-primary: var(--font-paragraph);
+  --font-seconday: var(--font-heading);
+
+  --font-paragraph: "Montserrat", sans-serif;
+  --font-heading: "Baloo 2", sans-serif;
 }
