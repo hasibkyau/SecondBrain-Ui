@@ -1,0 +1,33 @@
+body {
+    font-family: "Lato", sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    position: relative;
+}
+
+.sub-container{
+    position:absolute;
+    top: 0;
+    width: 80%;
+}
+
+.backgroung{
+    position:relative;
+    z-index: -1;
+    top: 0;
+}
+
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 19px;
+}
