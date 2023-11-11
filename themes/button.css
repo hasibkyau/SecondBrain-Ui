@@ -1,0 +1,18 @@
+@import 'variables.css';
+
+.primary-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 220px;
+    min-height: 63px;
+    height: auto;
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+    border-radius: 77px;
+    background-image: var(--color-pink-gradient);
+    font-family: var(--Montserrat-Bold);
+    box-shadow: 0 15px 24px rgba(230, 34, 116, 0.3);
+}
