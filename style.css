@@ -105,3 +105,56 @@ span {
     align-items: left;
     gap: 15px;
 }
+
+
+@media only screen and (max-width: 599px) {
+    h1 {
+            font-size: 35px;
+            line-height: 35px;
+        }
+    
+        h2 {
+            font-size: 23px;
+            line-height: 23px;
+        }
+    
+        h3 {
+            font-size: 20px;
+            line-height: 20px;
+        }
+    
+        h4 {
+            font-size: 12px;
+            line-height: 12px;
+        }
+    
+        h5 {
+            font-size: 10px;
+            line-height: 10px;
+        }
+    
+        p {
+            font-size: 8px;
+            line-height: 8px;
+        }
+    
+        span {
+            font-size: 10px;
+            line-height: 10px;
+        }
+    
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            width: 100%;
+            max-width: 600px;
+        }
+    
+        .sub-container {
+            width: 90%;
+            max-width: 500px;
+        }
+}
