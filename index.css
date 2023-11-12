@@ -1,8 +1,11 @@
 @import 'themes/variables.css';
 
 .banner-component {
+    margin: 0;
+    padding: 0;
     width: 100%;
     min-height: 920px;
     height: auto;
+    overflow: hidden;
 }
 
