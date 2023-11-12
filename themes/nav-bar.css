@@ -10,6 +10,18 @@
     max-width: 1140px;
 }
 
+/* Tablet View */
+@media only screen and (max-width: 1200px) {
+    .nav-bar {
+        width: 90%;
+    }
+    #nav-logo {
+        max-width: 400px;
+    }
+}
+
+
+/* Mobile View */
 @media only screen and (max-width: 599px) {
     .nav-bar{
         width: 90%;
