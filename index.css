@@ -1,6 +1,8 @@
 @import 'themes/variables.css';
 
-iframe {
-    border: 2px solid red;
-    min-height: 900px;
+.banner-component {
+    width: 100%;
+    min-height: 920px;
+    height: auto;
 }
+

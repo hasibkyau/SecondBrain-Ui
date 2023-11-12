@@ -10,6 +10,17 @@
     max-width: 1140px;
 }
 
+/* Desktop View */
+@media only screen and (min-width: 1600px) {
+    .nav-bar {
+        width: 100%;
+    }
+
+    #nav-logo {
+        min-width: 400px;
+    }
+}
+
 /* Tablet View */
 @media only screen and (max-width: 1200px) {
     .nav-bar {

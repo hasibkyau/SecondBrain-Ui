@@ -109,7 +109,7 @@ span {
 }
 
 
-/* Tablet View========================================= */
+/* Tablet View ========================================= */
 @media only screen and (max-width: 1200px) {
     h1 {
         font-size: 55px;
@@ -162,7 +162,7 @@ span {
     }
 }
 
-/* Mobile View============================================== */
+/* Mobile View ============================================== */
 @media only screen and (max-width: 599px) {
     h1 {
         font-size: 35px;
