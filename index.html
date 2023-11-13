@@ -1,32 +1,205 @@
 <!DOCTYPE html>
 <html lang="en">
-    
-<head>
+  <head>
     <title>Second Brain</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="themes/fonts.css">
-    <link rel="stylesheet" href="themes/variables.css">
-    <link rel="stylesheet" href="themes/button.css">
-    <link rel="stylesheet" href="themes/nav-bar.css">
-    <link rel="stylesheet" href="themes/banner.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="index.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="themes/fonts.css" />
+    <link rel="stylesheet" href="themes/variables.css" />
+    <link rel="stylesheet" href="themes/button.css" />
+    <link rel="stylesheet" href="themes/nav-bar.css" />
+    <link rel="stylesheet" href="themes/banner.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="themes/card.css" />
     <script type="text/javascript" src="index.js"></script>
-</head>
+  </head>
 
-<body>
+  <body>
 
-  <!-- Banner Section -->
-  <iframe 
-  class="banner-component" 
-  title="banner-component" 
-  src="./components/banner/banner.html" 
-  width="100%" 
-  height="auto" 
-  frameborder="0"></iframe>
+    <!-- Banner Section -->
+    <div class="container banner-container">
+      <div class="background">
+        <object
+          class="top-effect"
+          id="banner-bg"
+          data="../../assets/svg/banner/top-effect.svg"
+          type="image/svg+xml"
+          height="521"
+          width="1115"
+        ></object>
 
+        <object
+          class="bottom-effect"
+          id="banner-bg"
+          data="../../assets/svg/banner/bottom-effect.svg"
+          type="image/svg+xml"
+          height="339"
+          width="1020"
+        ></object>
+        <!--End Background Efect-->
 
+        <object
+          class="wall"
+          id="banner-bg"
+          data="../../assets/svg/banner/banner-bg.svg"
+          type="image/svg+xml"
+          height="auto"
+          width="100%"
+        ></object>
+      </div>
+      <!--End Banner Background-->
 
+      <div class="nav-bar">
+        <object
+          id="nav-logo"
+          data="../../assets/svg/banner/logo.svg"
+          type="image/svg+xml"
+          height="auto"
+          width="auto"
+        ></object>
+        <a class="primary-button" href="#">
+          <p class="primary-button">GET STARTED</p>
+        </a>
+      </div>
+      <!--End Nav Bar-->
+      <div class="sub-container">
+        <div class="main-content banner-content">
+          <div class="sub-main-content banner-left">
+            <div class="subtitle">
+              <h3>Revamp Your Writing with One Click:</h3>
+            </div>
+            <div class="title">
+              <h1>
+                The Ultimate Software <br />
+                for Lightning-Fast <br />
+                Content Creation!
+              </h1>
+            </div>
+            <div class="description">
+              <span>
+                Experience the Convenience and Efficiency of Our Chat GPT-
+                Integrated Chrome Extension Software & Rewrite Content with
+                Confidence and Respond to Messages with Ease
+              </span>
+            </div>
+            <div class="button">
+              <p class="primary-button">GET STARTED</p>
+            </div>
+          </div>
+          <div class="sub-main-content banner-right">
+            <object
+              id="logo-brain"
+              data="../../assets/svg/banner/brain.svg"
+              type="image/svg+xml"
+              width="603px"
+              height="auto"
+            ></object>
+          </div>
+        </div>
+        <!--End Banner Container-->
+      </div>
+    </div>
 
-</body>
+    <!--Time Deal Section-->
+    <div class="container">
+      <div class="background">
+        <object
+          class="wall"
+          id="banner-bg"
+          data="./assets/svg/home-page/backgroud_blue 2.svg"
+          type="image/svg+xml"
+          height="auto"
+          width="100%"
+        ></object>
+      </div>
+      <div class="sub-container time-deal-component">
+        <div class="header-content">
+          <h2 class="title">Limited-Time Deal Alert</h2>
+          <p class="subtitle">
+            Unbeatable Value, Unbelievable Results: Get Our Chat GPT-Integrated
+            Chrome <br> Extension Software for Just $9.99/month!
+          </p>
+        </div>
+        <!--End Card Header-->
+
+        <div class="main-content card-container">
+          <div class="card">
+            <div class="card-icon">
+              <object
+                id="light"
+                data="./assets/svg/home-page/light.svg"
+                type="image/svg+xml"
+                width="48px"
+                height="auto"
+              ></object>
+            </div>
+            <div class="card-title">
+              <h5 class="card-title">Say Goodbye to Writing Stress:</h5>
+            </div>
+            <div class="card-description">
+              <span class="card-description">
+                Our Chat GPT-Integrated Software Makes Content Creation a
+                Breeze, So You Can Focus on What Matters Most.
+              </span>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-icon">
+              <object
+                id="text-front-grandient"
+                data="./assets/svg/home-page/text-front-gradient.svg"
+                type="image/svg+xml"
+                width="60px"
+                height="auto"
+              ></object>
+            </div>
+            <div class="card-title">
+              <h5 class="card-title">Rewrite Content Like a Pro:</h5>
+            </div>
+            <div class="card-description">
+              <span class="card-description">
+                With Our Chrome Extension, You Can Edit Your Writing with Ease
+                and Confidence, No Matter Your Skill Level.
+              </span>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-icon">
+              <object
+                id="thumb-up-front-gradient"
+                data="./assets/svg/home-page/thumb-up-front-gradient.svg"
+                type="image/svg+xml"
+                width="60px"
+                height="auto"
+              ></object>
+            </div>
+            <div class="card-title">
+              <h5 class="card-title">Unlock Your Writing Potential:</h5>
+            </div>
+            <div class="card-description">
+              <span class="card-description">
+                Our Innovative Software Helps You Overcome Writer's Block and
+                Empowers You to Write with Clarity and Purpose.
+              </span>
+            </div>
+          </div>
+        </div>
+        <!--End Card content-->
+
+        <div class="main-content">
+          <div class="sub-main-content bottom-content">
+            <h3 class="title">Never Struggle with Rewriting Content Again!</h3>
+            <div class="button">
+              <p class="primary-button">GET STARTED</p>
+            </div>
+          </div>
+        </div>
+        <!--End Bottom Content-->
+      </div>
+    </div>
+
+  </body>
+</html>

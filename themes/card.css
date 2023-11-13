@@ -1,0 +1,164 @@
+@import 'themes/variables.css';
+
+.card-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+}
+
+.header-content{
+    padding-top: 90px;
+    padding-bottom: 21px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 45px;
+    gap: 28px;
+
+    width: 263px;
+    height: 244px;
+    flex-shrink: 0;
+    border-radius: 18px;
+    background: var(--color-blue-background);
+}
+
+.card-title{
+    color: var(--color-white);
+    text-align: center;
+    font-family: var(--Baloo2-Bold);
+    font-size: 45px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 30px;
+}
+
+.card-description{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--color-white);
+    text-align: center;
+    font-family: var(--font-primary-en);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 29px;
+    /* 207.143% */
+}
+
+.bottom-content{
+    padding-top: 50px;
+    padding-bottom: 58px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.time-deal-component {
+    background: var(--color-white-gray);
+    padding: 1px;
+}
+
+.bottom-content .title {
+    font-size: 24px;
+    text-wrap: wrap;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: center;
+    text-wrap: wrap;
+}
+
+.title{
+    display: flex;
+    flex-wrap: wrap;
+    text-wrap: wrap;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 70px;
+}
+
+.sub-title{
+    display: flex;
+    flex-wrap: wrap;
+    text-wrap: wrap;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 30px;
+    /* 187.5% */
+}
+
+/* Mobile View ============================================== */
+@media only screen and (max-width: 599px) {
+
+.time-deal-component {
+        background: rgba(255, 255, 255, 0.486);
+        padding: 1px;
+}
+
+.title {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 45px;
+}
+
+.sub-title {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 30px;
+    /* 187.5% */
+}
+.card-container {
+    flex-direction: column;
+    padding: 3px;
+}
+
+.header-content {
+    padding-top: 60px;
+    padding-bottom: 30px;
+}
+
+.card {
+    padding: 25px;
+    gap: 10px;
+    border-radius: 12px;
+}
+
+.card-title {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.card-description {
+    font-size: 14 px;
+    font-weight: 200;
+    line-height: 14px;
+}
+
+.bottom-content {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+}

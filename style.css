@@ -9,7 +9,6 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: var(--color-blue-background);
 }
 
 h1 {
@@ -86,11 +85,15 @@ span {
     position: relative;
     width: 100%;
     max-width: 1600px;
+    background-color: var(--color-blue-background);
+    z-index: -1;
 }
 
 .sub-container {
     width: 100%;
     max-width: 1140px;
+    margin: 0;
+    padding: 0;
 }
 
 .main-content {
@@ -107,6 +110,43 @@ span {
     align-items: left;
     gap: 15px;
 }
+
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -2;
+    width: 100%;
+    /* max-width: 1600px; */
+    min-height: 900px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.background .wall {
+    position: absolute;
+    width: auto;
+    height: auto;
+    z-index: -2;
+}
+
+
+.top-effect {
+    position: absolute;
+    right: 0px;
+    top: 0;
+}
+
+.bottom-effect {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+
 
 
 /* Tablet View ========================================= */
@@ -190,13 +230,14 @@ span {
     }
 
     p {
-        font-size: 8px;
-        line-height: 8px;
+        font-size: 15px;
+        line-height: 20px;
     }
 
     span {
-        font-size: 10px;
-        line-height: 10px;
+        font-size: 15px;
+        line-height: 18px;
+
     }
 
     .container {
@@ -206,11 +247,20 @@ span {
         align-items: center;
         position: relative;
         width: 100%;
-        max-width: 600px;
+        /* max-width: 600px; */
     }
 
     .sub-container {
+        width: 100%;
+        /* max-width: 500px; */
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .main-content{
         width: 90%;
-        max-width: 500px;
     }
 }
