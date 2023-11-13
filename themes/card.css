@@ -21,7 +21,7 @@
     height: 244px;
     flex-shrink: 0;
     border-radius: 18px;
-    background: var(--color-blue-background);
+    background: #11152E;
 }
 
 .card-title{

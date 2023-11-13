@@ -9,6 +9,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background: var(--color-blue-background);
 }
 
 h1 {
@@ -148,7 +149,6 @@ span {
 
 
 
-
 /* Tablet View ========================================= */
 @media only screen and (max-width: 1200px) {
     h1 {
@@ -201,6 +201,8 @@ span {
         max-width: 1200px;
     }
 }
+
+
 
 /* Mobile View ============================================== */
 @media only screen and (max-width: 599px) {
@@ -262,5 +264,42 @@ span {
 
     .main-content{
         width: 90%;
+    }
+}
+
+
+
+
+
+
+
+/*==GRID======================*/
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.left {
+    width: 50%;
+}
+.right {
+    width: 50%;
+}
+
+
+@media only screen and (max-width: 599px) {
+    .row {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .left {
+        width: 50%;
+    }
+
+    .right {
+        width: 50%;
     }
 }

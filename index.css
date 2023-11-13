@@ -1,5 +1,128 @@
 @import 'themes/variables.css';
 
+/*QUESTION Section Start ===============================================================*/
+.question-section{
+    border: 2px solid white;
+    height: 1134px;
+    z-index: 0;
+}
+
+.question-section .question-background{
+    border: 1px solid red;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+
+.question-section .left-effect{
+    border: 1px solid red;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 2;
+}
+
+/*Table List Section Start ==============================================================*/
+.table-section{
+    width: 1600px;
+    height: 750px;
+    flex-shrink: 0;
+    gap: 40px;
+}
+
+.table-section .title h2{
+    padding: 0;
+    margin: 0;
+    line-height:0;
+}
+
+.table-section .table-background{
+    position: absolute;
+    top: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 1600px;
+    height: 750px;
+}
+
+.table-section .left-effect{
+    left: 0;
+    position: absolute;
+    top: 0;
+}
+
+.table-section .right-effect{
+    right: 0;
+    position: absolute;
+    bottom: 0;
+}
+
+.table-section .table{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.table-section .table span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 261px;
+    height: 66px;
+    flex-shrink: 0;
+
+    border-radius: 7px;
+    border: 1px solid #353B5F;
+    background: #01051F;
+}
+
+/*Table List End/
+
+
+
+
+
+
+
+
+/*About Us Section================================================================*/
+
+.about-us {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-us .background{
+    min-height: 700px;
+}
+
+.about-us .row{
+    height: 700px;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-us .text-box{
+    /* P Tag 16 */
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px;
+    max-width: 524px;
+    /* 187.5% */
+}
+
+.about-us .primary-button{
+   margin-top: 28px ;
+}
+
+
+/*Limited Time Section==============================================================================*/
 .header-content {
     padding-top: 90px;
     padding-bottom: 21px;
@@ -24,17 +147,19 @@
 }
 
 .time-deal-component {
-    background: var(--color-white-gray);
     padding: 1px;
+    z-index: -1;
 }
 
 .bottom-content .title {
     font-size: 24px;
     text-wrap: wrap;
     font-weight: 600;
-    line-height: 30px;
+    line-height: 24px;
     text-align: center;
     text-wrap: wrap;
+    padding: 0;
+    margin: 0;
 }
 
 .title {
@@ -60,12 +185,6 @@
 
 /* Mobile View ============================================== */
 @media only screen and (max-width: 599px) {
-
-    .time-deal-component {
-        background: rgba(255, 255, 255, 0.486);
-        padding: 1px;
-    }
-
     .title {
         font-size: 30px;
         font-weight: 700;
