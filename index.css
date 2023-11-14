@@ -17,7 +17,7 @@
 .copyright span{
     font: var(--Montserrat-ExtraLight);
     color: var(--color-white);
-    font-size: 16px;
+    font-size: var(--font-size-small);;
     font-style: normal;
     font-weight: 200;
     line-height: 30px;
@@ -37,9 +37,9 @@
     width: 358px;
     height: 216px;
     border-radius: 7px;
-    border: 1px solid #800080;
-    background: #030720;
-    border-image: linear-gradient(to right, #800080, #E62274, #F9CE00) 30;
+    border: 1px solid var(--color-pink-purple);
+    background: var(--color-blue-background);
+    border-image: linear-gradient(to right, var(--color-border-primary), var(--color-pink), var(--color-yellow)) 30;
     border-width: 1px;
     border-style: solid;
 }
@@ -47,7 +47,7 @@
 .bottom-card .card-title{
     font: var(--Montserrat-ExtraLight);
     color: var(--color-white);
-    font-size: 16px;
+    font-size: var(--font-size-small);;
     font-style: normal;
     font-weight: 200;
     line-height: 30px;
@@ -68,7 +68,7 @@
 
 .bottom-banner .side-box {
     position: relative;
-    line-height: 20px;
+    line-height: var(--font-size-medium);
     text-align: left;
     left: 0;
 }
@@ -79,8 +79,8 @@
 }
 
 .bottom-banner .bottom-banner-title{
-    color: #FFF;
-    font-family: Baloo 2;
+    color: var(--color-white);
+    font-family: var(--font-primary-en);
     font-size: 40px;
     font-style: normal;
     font-weight: 700;
@@ -93,8 +93,8 @@
 .bottom-banner .side-box .bottom-banner-description{
     color: #FFF;
     /* P Tag 16 */
-    font-family: Montserrat;
-    font-size: 16px;
+    font-family: var(--font-secondary-en);
+    font-size: var(--font-size-small);;
     font-style: normal;
     font-weight: 500;
     line-height: 30px;
@@ -166,8 +166,8 @@
 } 
 
 .question-section h5{
-    font-family: Baloo 2;
-    font-size: 20px;
+    font-family: var(--font-primary-en);
+    font-size: var(--font-size-medium);
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -185,7 +185,7 @@
 
 
 #item-2 .item-title {
-    font-size: 20px;
+    font-size: var(--font-size-medium);
     display: flex;
     justify-content: space-between;
 }
@@ -287,8 +287,8 @@
 
 .about-us .text-box{
     /* P Tag 16 */
-    font-family: Montserrat;
-    font-size: 16px;
+    font-family: var(--font-secondary-en);
+    font-size: var(--font-size-small);;
     font-style: normal;
     font-weight: 500;
     line-height: 30px;
@@ -331,10 +331,10 @@
 }
 
 .bottom-content .title {
-    font-size: 24px;
+    font-size: var(--font-size-large);
     text-wrap: wrap;
     font-weight: 600;
-    line-height: 24px;
+    line-height: var(--font-size-large);
     text-align: center;
     text-wrap: wrap;
     padding: 0;
@@ -345,7 +345,7 @@
     display: flex;
     flex-wrap: wrap;
     text-wrap: wrap;
-    font-size: 45px;
+    font-size: var(--font-size-title);
     font-style: normal;
     font-weight: 700;
     line-height: 70px;
@@ -356,7 +356,7 @@
     flex-wrap: wrap;
     text-wrap: wrap;
     text-align: center;
-    font-size: 16px;
+    font-size: var(--font-size-small);;
     font-weight: 500;
     line-height: 30px;
     /* 187.5% */
@@ -371,7 +371,7 @@
     }
 
     .sub-title {
-        font-size: 16px;
+        font-size: var(--font-size-small);;
         font-weight: 500;
         line-height: 30px;
         /* 187.5% */
