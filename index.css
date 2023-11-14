@@ -1,206 +1,181 @@
 @import 'themes/variables.css';
 
-/*Copy Right Start=================================================================*/
-.copyright{
+/*Limited Time Section==============================================================================*/
+.limited-time {
+    padding: 1px;
+    z-index: -1;
+}
+
+.limited-time .header-content {
+    padding-top: 90px;
+    padding-bottom: 21px;
     display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
     justify-content: center;
-    align-items:  center;
-
-    width: 100%;
-    max-width: 1600px;
-    height: 75px;
-    flex-shrink: 0;
-    /* background: #11152E; */
-    background: var(--color-blue-deep);
+    align-items: center;
+    text-align: center;
+    max-width: 100%;
 }
 
-.copyright span{
-    font: var(--Montserrat-ExtraLight);
-    color: var(--color-white);
-    font-size: var(--font-size-small);;
-    font-style: normal;
-    font-weight: 200;
-    line-height: 30px;
-    /* 187.5% */
-}
 
-/*Bottom Card Start ===============================================================*/
-.bottom-card .card-container{
-    margin-top: -99px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: 30px;
-}
-.bottom-card .card{
-    width: 100%;
-    width: 358px;
-    height: 216px;
-    border-radius: 7px;
-    border: 1px solid var(--color-pink-purple);
-    background: var(--color-blue-background);
-    border-image: linear-gradient(to right, var(--color-border-primary), var(--color-pink), var(--color-yellow)) 30;
-    border-width: 1px;
-    border-style: solid;
-}
-
-.bottom-card .card-title{
-    font: var(--Montserrat-ExtraLight);
-    color: var(--color-white);
-    font-size: var(--font-size-small);;
-    font-style: normal;
-    font-weight: 200;
-    line-height: 30px;
-}
-/*Bottom Card End*/
-
-
-
-/*Footer Banner Start ====================================================================*/
-.bottom-banner{
-    position: relative;
-    height:664px;
-    margin-top: 102px;
+.limited-time .bottom-content {
+    padding-top: 50px;
+    padding-bottom: 58px;
     display: flex;
-    justify-content: left;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
     align-items: center;
 }
 
-.bottom-banner .side-box {
-    position: relative;
-    line-height: var(--font-size-medium);
-    text-align: left;
-    left: 0;
+.limited-time .bottom-content .title {
+    font-size: var(--font-size-large);
+    text-wrap: wrap;
+    font-weight: 600;
+    line-height: var(--font-size-large);
+    text-align: center;
+    text-wrap: wrap;
+    padding: 0;
+    margin: 0;
 }
 
-.bottom-banner .bottom-wall{
-    position: absolute;
-    right: 0;
-}
-
-.bottom-banner .bottom-banner-title{
-    color: var(--color-white);
-    font-family: var(--font-primary-en);
-    font-size: 40px;
+.limited-time .title {
+    display: flex;
+    flex-wrap: wrap;
+    text-wrap: wrap;
+    font-size: var(--font-size-title);
     font-style: normal;
     font-weight: 700;
-    line-height: 55px;
-    margin: 0;
-    
-    /* 122.222% */
+    line-height: 70px;
 }
 
-.bottom-banner .side-box .bottom-banner-description{
-    color: #FFF;
-    /* P Tag 16 */
-    font-family: var(--font-secondary-en);
+.limited-time .sub-title {
+    display: flex;
+    flex-wrap: wrap;
+    text-wrap: wrap;
+    text-align: center;
     font-size: var(--font-size-small);;
-    font-style: normal;
     font-weight: 500;
     line-height: 30px;
     /* 187.5% */
 }
 
-.bottom-banner .primary-button{
-    margin-top: 25px;
-}
-
-/*Bottom Banner End*/
-
-/*QUESTION Section Start ===============================================================*/
-.question-section{
-    width: 100%;
-    z-index: -3;
-    height: 1154px;
-}
-
-.question-section .question-background{
-    position: absolute;
-    z-index: -2;
-}
-
-.question-section .left-effect {
-    position: absolute;
-    bottom: 14px;
-    left: 0;
-    z-index: 0;
-    top: auto;
-}
-
-.question-section .heading{
+.limited-time .card-container{
     display: flex;
-    flex-direction: column;
+    width: 100%;
+}
+
+.limited-time .card{
+    border-radius: 18px;
+    background: #11152E;
+}
+
+/*Mobile Design*/
+@media only screen and (max-width: 599px) {
+    .limited-time .header-content{
+        padding-top: 50px;
+        width: 80%;
+    }
+    .limited-time .title{
+        font-size: var(--font-size-xl);
+        line-height: var(--font-size-xl);
+    }
+    .limited-time .card-title{
+        margin: 0;
+        line-height: var(--font-size-large);
+    }
+
+    .limited-time .bottom-content {
+        width: 80%;
+    }
+
+    .limited-time .bottom-content .title {
+        font-size: var(--font-size-medium);
+        line-height: var(--font-size-medium);
+    }
+
+}
+
+
+
+/*About Us Section ================================================================*/
+
+.about-us {
+    display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-
-    margin-top: 95px;
-    margin-bottom: 37px;
 }
 
-
-.question-section .form{
-    display: flex;
-    justify-content: right;
+.about-us .background {
+    min-height: 700px;
 }
 
-
-.question-section .items{
-    width: 100%;
-    max-width: 552px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.question-section .item{
-    display: flex;
+.about-us .row {
+    max-height: 700px;
+    justify-content: center;
     align-items: center;
-    max-height: 66px;
+}
 
-    width: 100%;
-    padding: 0 17px ;
-    border-radius: 7px;
-    border: 1px solid #22284F;
-    background: var(--color-blue-deep);
-} 
-
-.question-section h5{
-    font-family: var(--font-primary-en);
-    font-size: var(--font-size-medium);
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
+.about-us .text-box {
+    /* P Tag 16 */
+    font-family: var(--font-secondary-en);
+    font-size: var(--font-size-small);
+    ;
+    font-style: normal;
     font-weight: 500;
+    line-height: 30px;
+    max-width: 524px;
+    /* 187.5% */
 }
 
-#item-2{
-    display: flex;
-    max-height: 216px;
-    border-radius: 7px;
-    border: 1px solid #800080;
-    background: #000;
-    z-index: 2;
+.about-us .primary-button {
+    margin-top: 28px;
 }
 
+/*About Us Mobile Design*/
+@media only screen and (max-width:599px){
+    .about-us {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 900px;
+    }
 
-#item-2 .item-title {
-    font-size: var(--font-size-medium);
-    display: flex;
-    justify-content: space-between;
+    .about-us .background .wall {
+        position: absolute;
+        top: 0;
+        height: 900px;
+    }
+
+    .about-us .left{
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        text-align: left;
+        width: 100%;
+    }
+
+    .about-us .row {
+        width: 80%;
+    }
+    .about-us .title{
+        font-size: var(--font-size-xl);
+        line-height: var(--font-size-xxl);
+    }
+    .about-us .right{
+        width: 100%;
+    }
+    .about-us .right object{
+        width: 100%;
+        bottom: 0;
+        right: 0;
+        z-index: -1;
+    }
 }
-
-#item-2 .item-description{
-    display: flex;
-    max-width: 552px;
-}
-/*Question Section END*/
-
-
-
 
 /*Table List Section Start ==============================================================*/
-.table-section{
+.table-section {
     width: 100%;
     max-width: 1600px;
     height: 750px;
@@ -208,13 +183,13 @@
     gap: 40px;
 }
 
-.table-section .title h2{
+.table-section .title h2 {
     padding: 0;
     margin: 0;
-    line-height:0;
+    line-height: 0;
 }
 
-.table-section .table-background{
+.table-section .table-background {
     position: absolute;
     top: 0;
     display: grid;
@@ -223,26 +198,26 @@
     height: 750px;
 }
 
-.table-section .left-effect{
+.table-section .left-effect {
     left: 0;
     position: absolute;
     top: 0;
 }
 
-.table-section .right-effect{
+.table-section .right-effect {
     right: 0;
     position: absolute;
     bottom: 0;
 }
 
-.table-section .table{
+.table-section .table {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(4, 1fr);
     gap: 30px;
 }
 
-.table-section .table span{
+.table-section .table span {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -264,131 +239,216 @@
 
 
 
+/*QUESTION Section Start ===============================================================*/
+.question-section {
+    width: 100%;
+    z-index: -3;
+    height: 1154px;
+}
 
+.question-section .question-background {
+    position: absolute;
+    z-index: -2;
+}
 
+.question-section .left-effect {
+    position: absolute;
+    bottom: 14px;
+    left: 0;
+    z-index: 0;
+    top: auto;
+}
 
-/*About Us Section================================================================*/
-
-.about-us {
+.question-section .heading {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
+
+    margin-top: 95px;
+    margin-bottom: 37px;
 }
 
-.about-us .background{
-    min-height: 700px;
+
+.question-section .form {
+    display: flex;
+    justify-content: right;
 }
 
-.about-us .row{
-    max-height: 700px;
-    justify-content: center;
+
+.question-section .items {
+    width: 100%;
+    max-width: 552px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.question-section .item {
+    display: flex;
     align-items: center;
+    max-height: 66px;
+
+    width: 100%;
+    padding: 0 17px;
+    border-radius: 7px;
+    border: 1px solid #22284F;
+    background: var(--color-blue-deep);
 }
 
-.about-us .text-box{
-    /* P Tag 16 */
-    font-family: var(--font-secondary-en);
-    font-size: var(--font-size-small);;
-    font-style: normal;
+.question-section h5 {
+    font-family: var(--font-primary-en);
+    font-size: var(--font-size-medium);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
     font-weight: 500;
-    line-height: 30px;
-     max-width: 524px;
-    /* 187.5% */
 }
 
-.about-us .primary-button{
-   margin-top: 28px ;
-}
-
-
-/*Limited Time Section==============================================================================*/
-.header-content {
-    padding-top: 90px;
-    padding-bottom: 21px;
+#item-2 {
     display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
+    max-height: 216px;
+    border-radius: 7px;
+    border: 1px solid #800080;
+    background: #000;
+    z-index: 2;
+}
+
+
+#item-2 .item-title {
+    font-size: var(--font-size-medium);
+    display: flex;
+    justify-content: space-between;
+}
+
+#item-2 .item-description {
+    display: flex;
+    max-width: 552px;
+}
+
+/*Question Section END*/
+
+
+
+
+
+/*Footer Banner Start ====================================================================*/
+.bottom-banner {
+    position: relative;
+    height: 664px;
+    margin-top: 102px;
+    display: flex;
+    justify-content: left;
     align-items: center;
-    text-align: center;
-    max-width: 100%;
 }
 
-
-.bottom-content {
-    padding-top: 50px;
-    padding-bottom: 58px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
+.bottom-banner .side-box {
+    position: relative;
+    line-height: var(--font-size-medium);
+    text-align: left;
+    left: 0;
 }
 
-.time-deal-component {
-    padding: 1px;
-    z-index: -1;
+.bottom-banner .bottom-wall {
+    position: absolute;
+    right: 0;
 }
 
-.bottom-content .title {
-    font-size: var(--font-size-large);
-    text-wrap: wrap;
-    font-weight: 600;
-    line-height: var(--font-size-large);
-    text-align: center;
-    text-wrap: wrap;
-    padding: 0;
-    margin: 0;
-}
-
-.title {
-    display: flex;
-    flex-wrap: wrap;
-    text-wrap: wrap;
-    font-size: var(--font-size-title);
+.bottom-banner .bottom-banner-title {
+    color: var(--color-white);
+    font-family: var(--font-primary-en);
+    font-size: 40px;
     font-style: normal;
     font-weight: 700;
-    line-height: 70px;
+    line-height: 55px;
+    margin: 0;
+
+    /* 122.222% */
 }
 
-.sub-title {
-    display: flex;
-    flex-wrap: wrap;
-    text-wrap: wrap;
-    text-align: center;
-    font-size: var(--font-size-small);;
+.bottom-banner .side-box .bottom-banner-description {
+    color: #FFF;
+    /* P Tag 16 */
+    font-family: var(--font-secondary-en);
+    font-size: var(--font-size-small);
+    ;
+    font-style: normal;
     font-weight: 500;
     line-height: 30px;
     /* 187.5% */
 }
 
-/* Mobile View ============================================== */
-@media only screen and ( max-width: 599px) {
-    .title {
-        font-size: 30px;
-        font-weight: 700;
-        line-height: 45px;
-    }
-
-    .sub-title {
-        font-size: var(--font-size-small);;
-        font-weight: 500;
-        line-height: 30px;
-        /* 187.5% */
-    }
-
-
-    .header-content {
-        padding-top: 60px;
-        padding-bottom: 30px;
-    }
-
-    .bottom-content {
-        text-align: center;
-        padding-top: 30px;
-        padding-bottom: 30px;
-        max-width: 100%;
-        flex-wrap: wrap;
-    }
-
+.bottom-banner .primary-button {
+    margin-top: 25px;
 }
+
+/*Bottom Banner End*/
+
+
+
+
+
+
+
+/*Bottom Card Start ===============================================================*/
+.bottom-card .card-container {
+    margin-top: -99px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.bottom-card .card {
+    width: 100%;
+    width: 358px;
+    height: 216px;
+    border-radius: 7px;
+    border: 1px solid var(--color-pink-purple);
+    background: var(--color-blue-background);
+    border-image: linear-gradient(to right, var(--color-border-primary), var(--color-pink), var(--color-yellow)) 30;
+    border-width: 1px;
+    border-style: solid;
+}
+
+.bottom-card .card-title {
+    font: var(--Montserrat-ExtraLight);
+    color: var(--color-white);
+    font-size: var(--font-size-small);
+    ;
+    font-style: normal;
+    font-weight: 200;
+    line-height: 30px;
+}
+
+/*Bottom Card End*/
+
+
+
+/*Copy Right Start=================================================================*/
+.copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    max-width: 1600px;
+    height: 75px;
+    flex-shrink: 0;
+    /* background: #11152E; */
+    background: var(--color-blue-deep);
+}
+
+.copyright span {
+    font: var(--Montserrat-ExtraLight);
+    color: var(--color-white);
+    font-size: var(--font-size-small);
+    ;
+    font-style: normal;
+    font-weight: 200;
+    line-height: 30px;
+    /* 187.5% */
+}
+
+/*Copayright End*/
