@@ -31,6 +31,7 @@
 @font-face {
     font-family: Montserrat-ExtraLight;
     src: url('../assets/fonts/montserrat/Montserrat-ExtraLight.otf') format("truetype");
+    font-weight: 200;
 }
 
 @font-face {

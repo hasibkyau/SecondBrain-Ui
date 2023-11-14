@@ -1,31 +1,208 @@
 @import 'themes/variables.css';
 
+/*Copy Right Start=================================================================*/
+.copyright{
+    display: flex;
+    justify-content: center;
+    align-items:  center;
+
+    width: 100%;
+    max-width: 1600px;
+    height: 75px;
+    flex-shrink: 0;
+    /* background: #11152E; */
+    background: var(--color-blue-deep);
+}
+
+.copyright span{
+    font: var(--Montserrat-ExtraLight);
+    color: var(--color-white);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: 30px;
+    /* 187.5% */
+}
+
+/*Bottom Card Start ===============================================================*/
+.bottom-card .card-container{
+    margin-top: -99px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 30px;
+}
+.bottom-card .card{
+    width: 100%;
+    width: 358px;
+    height: 216px;
+    border-radius: 7px;
+    border: 1px solid #800080;
+    background: #030720;
+    border-image: linear-gradient(to right, #800080, #E62274, #F9CE00) 30;
+    border-width: 1px;
+    border-style: solid;
+}
+
+.bottom-card .card-title{
+    font: var(--Montserrat-ExtraLight);
+    color: var(--color-white);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: 30px;
+}
+/*Bottom Card End*/
+
+
+
+/*Footer Banner Start ====================================================================*/
+.bottom-banner{
+    position: relative;
+    height:664px;
+    margin-top: 102px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.bottom-banner .side-box {
+    position: relative;
+    line-height: 20px;
+    text-align: left;
+    left: 0;
+}
+
+.bottom-banner .bottom-wall{
+    position: absolute;
+    right: 0;
+}
+
+.bottom-banner .bottom-banner-title{
+    color: #FFF;
+    font-family: Baloo 2;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 55px;
+    margin: 0;
+    
+    /* 122.222% */
+}
+
+.bottom-banner .side-box .bottom-banner-description{
+    color: #FFF;
+    /* P Tag 16 */
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px;
+    /* 187.5% */
+}
+
+.bottom-banner .primary-button{
+    margin-top: 25px;
+}
+
+/*Bottom Banner End*/
+
 /*QUESTION Section Start ===============================================================*/
 .question-section{
-    border: 2px solid white;
-    height: 1134px;
-    z-index: 0;
+    width: 100%;
+    z-index: -3;
+    height: 1154px;
 }
 
 .question-section .question-background{
-    border: 1px solid red;
     position: absolute;
-    left: 0;
-    top: 0;
-    z-index: 1;
+    z-index: -2;
 }
 
-.question-section .left-effect{
-    border: 1px solid red;
+.question-section .left-effect {
     position: absolute;
+    bottom: 14px;
     left: 0;
-    top: 0;
+    z-index: 0;
+    top: auto;
+}
+
+.question-section .heading{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    margin-top: 95px;
+    margin-bottom: 37px;
+}
+
+
+.question-section .form{
+    display: flex;
+    justify-content: right;
+}
+
+
+.question-section .items{
+    width: 100%;
+    max-width: 552px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.question-section .item{
+    display: flex;
+    align-items: center;
+    max-height: 66px;
+
+    width: 100%;
+    padding: 0 17px ;
+    border-radius: 7px;
+    border: 1px solid #22284F;
+    background: var(--color-blue-deep);
+} 
+
+.question-section h5{
+    font-family: Baloo 2;
+    font-size: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 500;
+}
+
+#item-2{
+    display: flex;
+    max-height: 216px;
+    border-radius: 7px;
+    border: 1px solid #800080;
+    background: #000;
     z-index: 2;
 }
 
+
+#item-2 .item-title {
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#item-2 .item-description{
+    display: flex;
+    max-width: 552px;
+}
+/*Question Section END*/
+
+
+
+
 /*Table List Section Start ==============================================================*/
 .table-section{
-    width: 1600px;
+    width: 100%;
+    max-width: 1600px;
     height: 750px;
     flex-shrink: 0;
     gap: 40px;
@@ -77,6 +254,8 @@
     border-radius: 7px;
     border: 1px solid #353B5F;
     background: #01051F;
+    opacity: 1;
+    z-index: 2;
 }
 
 /*Table List End/
@@ -101,7 +280,7 @@
 }
 
 .about-us .row{
-    height: 700px;
+    max-height: 700px;
     justify-content: center;
     align-items: center;
 }
@@ -113,7 +292,7 @@
     font-style: normal;
     font-weight: 500;
     line-height: 30px;
-    max-width: 524px;
+     max-width: 524px;
     /* 187.5% */
 }
 
@@ -132,7 +311,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    width: 100%;
+    max-width: 100%;
 }
 
 
@@ -184,7 +363,7 @@
 }
 
 /* Mobile View ============================================== */
-@media only screen and (max-width: 599px) {
+@media only screen and ( max-width: 599px) {
     .title {
         font-size: 30px;
         font-weight: 700;
@@ -208,7 +387,7 @@
         text-align: center;
         padding-top: 30px;
         padding-bottom: 30px;
-        width: 100%;
+        max-width: 100%;
         flex-wrap: wrap;
     }
 

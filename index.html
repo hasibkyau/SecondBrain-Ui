@@ -95,7 +95,7 @@
     <!-- Banner Section End-->
 
     <!--Time Deal Section Start-->
-    <div class="container">
+    <div class="container time-deal">
       <div class="background">
         <object
           class="wall"
@@ -286,28 +286,29 @@
     <!--Question Section Start-->
     <div class="container question-section">
       <div class="question-background">
-        <object
-          class="left-effect"
-          id="banner-bg"
-          data="./assets/svg/home-page/QuestionSection/bg-left-effect.svg"
-          type="image/svg+xml"
-          height="1134px"
-          width="1166px"
-        ></object>
-        <object
-          class="wall"
-          id="banner-bg"
-          data="./assets/svg/home-page/QuestionSection/bg.svg"
-          type="image/svg+xml"
-          height="1134px"
-          width="1600px"
-        ></object>
+        <div class="effects">
+          <object
+            class="left-effect"
+            id="robot"
+            data="./assets/svg/home-page/QuestionSection/robot.svg"
+            type="image/svg+xml"
+            height="761px"
+            width="639px"
+          ></object>
+          <object
+            class="wall"
+            id="banner-bg"
+            data="./assets/svg/home-page/QuestionSection/bg-4.svg"
+            type="image/svg+xml"
+            width="1600px"
+          ></object>
+        </div>
       </div>
 
       <div class="sub-container">
         <div class="heading">
           <div class="title">
-            <h3>Got Questions? We've Got Answers!</h3>
+            <h3 class="title">Got Questions? We've Got Answers!</h3>
           </div>
           <div class="subtitle">
             <p>
@@ -316,22 +317,334 @@
             </p>
           </div>
         </div>
-        <div class="row">
-          <div class="left">
-            <object
-              class="robot"
-              id="robot"
-              data="./assets/svg/home-page/QuestionSection/robot.svg"
-              type="image/svg+xml"
-              height="761px"
-              width="639px"
-            ></object>
-          </div>
-          <div class="right">
 
+        <div class="form-container">
+          <div class="form">
+            <div class="items">
+              <div id="item-1" class="item" onClick="toggleItem(item-1)">
+                <h5 class="item-title">
+                  What is your software?
+                  <span class="plus-icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="17"
+                      height="17"
+                      viewBox="0 0 17 17"
+                      fill="none"
+                    >
+                      <rect x="8" width="2" height="17" fill="#D9D9D9" />
+                      <rect
+                        x="17"
+                        y="8"
+                        width="2"
+                        height="17"
+                        transform="rotate(90 17 8)"
+                        fill="#D9D9D9"
+                      />
+                    </svg>
+                  </span>
+                </h5>
+              </div>
+              <div id="item-2" class="item" onClick="toggleItem(item-1)">
+                <p class="item-box">
+                  <span class="item-title"
+                    >Is your software easy to use?
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="25"
+                      height="25"
+                      viewBox="0 0 25 25"
+                      fill="none"
+                    >
+                      <rect
+                        x="18.1567"
+                        y="6.13635"
+                        width="2"
+                        height="17"
+                        transform="rotate(45 18.1567 6.13635)"
+                        fill="#D9D9D9"
+                      />
+                      <rect
+                        x="18.8638"
+                        y="18.1572"
+                        width="2"
+                        height="17"
+                        transform="rotate(135 18.8638 18.1572)"
+                        fill="#D9D9D9"
+                      />
+                    </svg>
+                  </span>
+                  <br />
+                  <span class="item-description">
+                    With our software, you can rewrite content with just one
+                    click of the mouse. Our chrome extension integrates with
+                    OpenAI/Chat GPT, so you don’t have to go through the hassle
+                    of opening the app every time.
+                  </span>
+                </p>
+              </div>
+              <div id="item-3" class="item" onClick="toggleItem(item-1)">
+                <h5 class="item-title">
+                  What is Chat GPT?
+                  <span class="plus-icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="17"
+                      height="17"
+                      viewBox="0 0 17 17"
+                      fill="none"
+                    >
+                      <rect x="8" width="2" height="17" fill="#D9D9D9" />
+                      <rect
+                        x="17"
+                        y="8"
+                        width="2"
+                        height="17"
+                        transform="rotate(90 17 8)"
+                        fill="#D9D9D9"
+                      />
+                    </svg>
+                  </span>
+                </h5>
+              </div>
+              <div id="item-4" class="item" onClick="toggleItem(item-1)">
+                <h5 class="item-title">
+                  How much does your software cost?
+                  <span class="plus-icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="17"
+                      height="17"
+                      viewBox="0 0 17 17"
+                      fill="none"
+                    >
+                      <rect x="8" width="2" height="17" fill="#D9D9D9" />
+                      <rect
+                        x="17"
+                        y="8"
+                        width="2"
+                        height="17"
+                        transform="rotate(90 17 8)"
+                        fill="#D9D9D9"
+                      />
+                    </svg>
+                  </span>
+                </h5>
+              </div>
+              <div id="item-5" class="item" onClick="toggleItem(item-1)">
+                <h5 class="item-title">
+                  Can I cancel my subscription anytime?
+                  <span class="plus-icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="17"
+                      height="17"
+                      viewBox="0 0 17 17"
+                      fill="none"
+                    >
+                      <rect x="8" width="2" height="17" fill="#D9D9D9" />
+                      <rect
+                        x="17"
+                        y="8"
+                        width="2"
+                        height="17"
+                        transform="rotate(90 17 8)"
+                        fill="#D9D9D9"
+                      />
+                    </svg>
+                  </span>
+                </h5>
+              </div>
+              <div id="item-6" class="item" onClick="toggleItem(item-1)">
+                <h5 class="item-title">
+                  Is there a free trial?
+                  <span class="plus-icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="17"
+                      height="17"
+                      viewBox="0 0 17 17"
+                      fill="none"
+                    >
+                      <rect x="8" width="2" height="17" fill="#D9D9D9" />
+                      <rect
+                        x="17"
+                        y="8"
+                        width="2"
+                        height="17"
+                        transform="rotate(90 17 8)"
+                        fill="#D9D9D9"
+                      />
+                    </svg>
+                  </span>
+                </h5>
+              </div>
+              <div id="item-7" class="item" onClick="toggleItem(item-1)">
+                <h5 class="item-title">
+                  What is your software?
+                  <span class="plus-icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="17"
+                      height="17"
+                      viewBox="0 0 17 17"
+                      fill="none"
+                    >
+                      <rect x="8" width="2" height="17" fill="#D9D9D9" />
+                      <rect
+                        x="17"
+                        y="8"
+                        width="2"
+                        height="17"
+                        transform="rotate(90 17 8)"
+                        fill="#D9D9D9"
+                      />
+                    </svg>
+                  </span>
+                </h5>
+              </div>
+
+              <div class="primary-button">
+                <p class="button">GET STARTED</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
+    <!--Question Section End-->
+
+    <!--Bottom Banner Start-->
+    <div class="container bottom-banner">
+      <div class="bottom-wall">
+        <object
+          class="wall"
+          id="bottom-banner-img"
+          data="./assets/svg/home-page/bottom-banner/indian-woman-working-laptop-street-cafe-wearing-stylish-smart-clothes-jacket-glasses 4.svg"
+          type="image/svg+xml"
+          height="664px"
+          width="995px"
+        ></object>
+      </div>
+      <div class="sub-container side-box">
+        <h5 class="bottom-banner-title">
+          Write Smarter, Not <br />
+          Harder: The Must- <br />
+          Have Chrome Extension <br />
+          Software Is Here!
+        </h5>
+        <p class="bottom-banner-description">
+          Step up your writing game today and join the <br />
+          thousands of satisfied users who have transformed <br />
+          their content with our software
+        </p>
+        <div class="primary-button">
+          <div class="button">GET STARTED</div>
+        </div>
+      </div>
+    </div>
+    <!--Bottom Banner End-->
+
+    <!--Bottom Card Container Start-->
+    <div class="container bottom-card">
+      <div class="card-container">
+        <div class="card">
+          <div class="card-icon">
+            <object
+              id="light"
+              data="./assets/svg//home-page/bottom-cards/1-rewrite-icon.svg"
+              type="image/svg+xml"
+              width="56px"
+              height="auto"
+            ></object>
+          </div>
+          <div class="card-title">
+            Rewrite Content in <br />
+            an INSTANT
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">
+            <object
+              id="light"
+              data="./assets/svg//home-page/bottom-cards/2-increased-icon.svg"
+              type="image/svg+xml"
+              width="56px"
+              height="auto"
+            ></object>
+          </div>
+          <div class="card-title">
+            Increased <br> Productivity
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">
+            <object
+              id="light"
+              data="./assets/svg//home-page/bottom-cards/3-Time Saving-icon.svg"
+              type="image/svg+xml"
+              width="56px"
+              height="auto"
+            ></object>
+          </div>
+          <div class="card-title">
+            Time-Saving
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">
+            <object
+              id="light"
+              data="./assets/svg//home-page/bottom-cards/4-ligtining-icon.svg"
+              type="image/svg+xml"
+              width="56px"
+              height="auto"
+            ></object>
+          </div>
+          <div class="card-title">
+            Lightning-Fast <br> Email Responses
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">
+            <object
+              id="light"
+              data="./assets/svg//home-page/bottom-cards/5-effertlessely-icon.svg"
+              type="image/svg+xml"
+              width="56px"
+              height="auto"
+            ></object>
+          </div>
+          <div class="card-title">
+            Effortlessly Manage <br> Support Emails & Message
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">
+            <object
+              id="light"
+              data="./assets/svg//home-page/bottom-cards/1-rewrite-icon.svg"
+              type="image/svg+xml"
+              width="56px"
+              height="auto"
+            ></object>
+          </div>
+          <div class="card-title">
+            Simple & User-Friendly <br> Interface
+          </div>
+        </div>
+      </div>
+    </div><!--Bottom Card Container End-->
+
+    <!--Copyright Section Start-->
+    <div class="copyright">
+      <span>© 2023-24 Second Brain. All rights reserved. Privacy Policy   |   Terms of use   |   Cookie Policy</span>
+    </div>
+    
   </body>
 </html>
