@@ -544,11 +544,12 @@
 
     .question-background .left-effect{
         position: absolute;
-        justify-content: left;
-        align-items: left;
-        left: 0;
+        justify-content: right;
+        align-items: right;
+        right: 0;
+        left: auto;
         bottom: 0;
-        width: 80%;
+        width: 200px;
         height: auto;
         opacity: 1;
         z-index: 1;
