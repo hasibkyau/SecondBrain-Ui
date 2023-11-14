@@ -636,7 +636,7 @@
 .bottom-banner {
     position: relative;
     height: 664px;
-    margin-top: 102px;
+    margin-top: 0px;
     display: flex;
     justify-content: left;
     align-items: center;
@@ -675,8 +675,9 @@
 /*Bottom Banner Mobile Desing*/
 .bottom-banner {
     position: relative;
-    height: 664px;
-    margin-top: 102px;
+    /* height: 664px; */
+    /* margin-top: 102px; */
+    padding-top: 102px;
     display: flex;
     justify-content: left;
     align-items: center;
@@ -691,7 +692,7 @@
 
 .bottom-banner .bottom-wall {
     position: absolute;
-    right: 0;
+    right: -10px;
 }
 
 .bottom-banner .bottom-banner-title {
