@@ -181,12 +181,6 @@
         overflow: hidden;
     }
 
-    .about-us .background .wall {
-        position: absolute;
-        top: 0;
-        height: auto;
-    }
-
     .about-us .left{
         display: flex;
         flex-direction: column;
@@ -199,17 +193,26 @@
         width: 80%;
     }
     .about-us .title{
+        padding-top: 50px;
         font-size: var(--font-size-xl);
         line-height: var(--font-size-xxl);
     }
     .about-us .right{
         width: 100%;
+        max-width: 599px;
+        position: absolute;
+        opacity: 0.7;
     }
     .about-us .right object{
         width: 100%;
+        max-width: 599px;
         bottom: 0;
         right: 0;
         z-index: -1;
+    }
+
+    .about-us .primary-button{
+        margin-bottom: 30px;
     }
 }
 
@@ -318,7 +321,7 @@
 /*Table List Mobile Design*/
 @media only screen and (max-width:599px) {
     .table-section {
-        width: 80%;
+        width: 100%;
         height: 700px;
         padding: 50px 0;
         max-width: 599px;
@@ -340,8 +343,10 @@
         display: flex;
         flex-direction: column;
         /* grid-template-rows: repeat(16, 1fr); */
-        width: 80%;
+        width: 100%;
         height: auto;
+        max-width: 599px;
+        overflow: hidden;
     }
 
     .table-section .table {
@@ -656,7 +661,7 @@
 }
 
 .bottom-banner .primary-button {
-    margin-top: 25px;
+    /* margin-top: 25px; */
 }
 /*Bottom Banner Mobile Desing*/
 .bottom-banner {
