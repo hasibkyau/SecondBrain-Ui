@@ -233,6 +233,52 @@
     z-index: 2;
 }
 
+/*Table List Mobile Design*/
+@media only screen and (max-width:599px) {
+    .table-section {
+        width: 80%;
+        height: auto;
+        padding: 50px 0;
+    }
+
+    .table-section .title h2 {
+        font-size: var(--font-size-xl);
+        line-height: var(--font-size-xxl);
+        text-wrap: wrap;
+        text-align: center;
+    }
+
+    .table-section .table-background {
+        position: absolute;
+        top: 0;
+        display: flex;
+        flex-direction: column;
+        /* grid-template-rows: repeat(16, 1fr); */
+        width: 80%;
+        height: auto;
+    }
+
+    .table-section .table {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(8, 1fr);
+        gap: 10px;
+    }
+
+    .table-section .table span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        text-wrap: nowrap;
+
+        font-size: var(--font-size-xsml);
+
+        width: 150px;
+        height: 50px;
+    }
+}
+
 /*Table List End/
 
 
