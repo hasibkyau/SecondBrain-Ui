@@ -169,6 +169,7 @@
     margin-top: 28px;
 }
 
+
 /*About Us Mobile Design*/
 @media only screen and (max-width:599px){
     .about-us {
@@ -277,6 +278,14 @@
         margin-top: 50px;
         max-width: 1200px;
         overflow: hidden;
+    }
+
+    .table-section .title{
+        margin-top: 90px;
+    }
+
+    .table-section .primary-button{
+        margin-bottom: 50px;
     }
 
     .table-section .table {
@@ -446,15 +455,32 @@
 
 /*Tablet Design for Question Section*/
 @media only screen and (max-width:1200px) {
+    .question-section{
+        max-width: 1200;
+        overflow: hidden;
+    }
+
+    .question-section .title{
+        font-size: var(--font-size-title);
+        line-height: var(--font-size-title);
+    }
+    
+    .question-section .subtitle p{
+        font-size: var(--font-size-medium);
+        line-height: var(--font-size-medium);
+        text-wrap: wrap;
+        text-align: center;
+    }
+
     .question-section .form {
         display: flex;
         justify-content: center;
     }
 
     .question-section h5 {
-        font-size: var(--font-size-medium);
+        font-size: var(--font-size-large);
         font-weight: 200;
-        line-height: var(--font-size-medium);
+        line-height: var(--font-size-large);
         margin-left: 10px;
         margin-right: 10px;
     }
@@ -464,19 +490,21 @@
         height: auto;
         padding: 10px;
         width: 100%;
+        height: 200px;
     }
 
 
     #item-2 .item-title {
-        font-size: var(--font-size-small);
-        line-height: var(--font-size-small);
+        font-size: var(--font-size-large);
+        line-height: var(--font-size-large);
         display: flex;
         justify-content: space-between;
     }
 
     #item-2 .item-description {
         display: flex;
-        font-size: var(--font-size-xsml);
+        font-size: var(--font-size-large);
+        line-height: var(--font-size-large);
         max-width: 552px;
     }
 }
@@ -676,6 +704,45 @@
     margin-top: 25px;
 }
 
+/*Tablet Design for Bottom Banner*/
+@media only screen and (max-width:1200px) {
+    .bottom-banner {
+        position: relative;
+        height: auto;
+        max-width: 1200px;
+        overflow: hidden;
+    }
+
+    .bottom-banner .side-box {
+        width: 80%;
+        position: relative;
+    }
+
+    /*Bottom Banner Mobile Desing*/
+    .bottom-banner .bottom-wall {
+        width: 100%;
+        position: absolute;
+        right: 0;
+        opacity: 0.7;
+    }
+
+    .bottom-banner .bottom-banner-title {
+        font-size: var(--font-size-xl);
+        line-height: var(--font-size-xl);
+        padding: 20px 0;
+        max-width: 350px;
+    }
+
+    .bottom-banner .bottom-banner-description {
+        max-width: 350px;
+        font-size: var(--font-size-xsml);
+        line-height: var(--font-size-xsml);
+    }
+
+    .bottom-banner .primary-button{
+        margin:50px 0;
+    }
+}
 
 /*Mobile Design for Bottom Banner*/
 @media only screen and (max-width:599px) {
@@ -748,12 +815,13 @@
 /*Tablet Design for Bottom Card*/
 @media only screen and (max-width:1200px) {
     .bottom-card{
+        width: 100%;
         max-width: 1200px;
         overflow: hidden;
     }
 
     .bottom-card .card-container {
-        margin-top: -99px;
+        margin-top: 50px;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(3, 1fr);
