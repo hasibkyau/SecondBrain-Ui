@@ -487,9 +487,9 @@
     .question-section {
         display: flex;
         align-items: top;
-        width: 80%;
+        width: 100%;
         z-index: -3;
-        height: 1154px;;
+        height: 1154px;
         max-width: 599px;
         overflow: hidden;
     }
@@ -517,6 +517,7 @@
 
     .question-section .heading {
         margin-top: 0px;
+        padding: 10px;
     }
 
     .question-section .title{
@@ -537,6 +538,7 @@
     .question-section .form {
         display: flex;
         justify-content: center;
+        padding: 10px;
     }
 
     .question-section .items {
