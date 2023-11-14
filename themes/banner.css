@@ -112,12 +112,13 @@
         display: flex;
         flex-direction: column;
         align-items:flex-start;
+        overflow: hidden;
     }
 
-    .banner-container .wall{
+    /* .banner-container .wall{
         max-width: 599px;
         min-height: 900px;
-    }
+    } */
     
     .banner-left {
         position: relative;
