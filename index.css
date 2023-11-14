@@ -176,7 +176,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 900px;
+        height: auto;
         max-width: 599px;
         overflow: hidden;
     }
@@ -184,7 +184,7 @@
     .about-us .background .wall {
         position: absolute;
         top: 0;
-        height: 900px;
+        height: auto;
     }
 
     .about-us .left{
@@ -272,11 +272,13 @@
     z-index: 2;
 }
 
+/*Table List Tablet Design*/
 @media only screen and (max-width: 1200px) {
     .table-section{
         height: auto;
         margin-top: 50px;
         max-width: 1200px;
+        height: auto;
         overflow: hidden;
     }
 
@@ -317,7 +319,7 @@
 @media only screen and (max-width:599px) {
     .table-section {
         width: 80%;
-        height: auto;
+        height: 700px;
         padding: 50px 0;
         max-width: 599px;
         overflow: hidden;
@@ -328,6 +330,8 @@
         line-height: var(--font-size-xxl);
         text-wrap: wrap;
         text-align: center;
+        margin: 0;
+        padding: 0;
     }
 
     .table-section .table-background {
@@ -760,7 +764,10 @@
 
     /*Bottom Banner Mobile Desing*/
     .bottom-banner .bottom-wall {
-        position: relative;
+        position: absolute;
+        width: 100%;
+        width: 599px;
+        height: auto;
         right: 0;
     }
 
