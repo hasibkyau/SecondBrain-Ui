@@ -464,72 +464,16 @@
     max-width: 552px;
 }
 
+
 /*Tablet Design for Question Section*/
 @media only screen and (max-width:1200px) {
-    .question-section{
-        max-width: 1200;
-        overflow: hidden;
-    }
-
-    .question-section .title{
-        font-size: var(--font-size-title);
-        line-height: var(--font-size-title);
-    }
-    
-    .question-section .subtitle p{
-        font-size: var(--font-size-medium);
-        line-height: var(--font-size-medium);
-        text-wrap: wrap;
-        text-align: center;
-    }
-
-    .question-section .form {
-        display: flex;
-        justify-content: center;
-    }
-
-    .question-section h5 {
-        font-size: var(--font-size-large);
-        font-weight: 200;
-        line-height: var(--font-size-large);
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-
-    #item-2 {
-        display: flex;
-        height: auto;
-        padding: 10px;
-        width: 100%;
-        height: 200px;
-    }
-
-
-    #item-2 .item-title {
-        font-size: var(--font-size-large);
-        line-height: var(--font-size-large);
-        display: flex;
-        justify-content: space-between;
-    }
-
-    #item-2 .item-description {
-        display: flex;
-        font-size: var(--font-size-large);
-        line-height: var(--font-size-large);
-        max-width: 552px;
-    }
-}
-
-
-/*Mobile Design for Question Section*/
-@media only screen and (max-width:599px) {
     .question-section {
         display: flex;
         align-items: top;
         width: 100%;
         z-index: -3;
         height: auto;
-        max-width: 599px;
+        max-width: 1200px;
         overflow: hidden;
     }
 
@@ -549,8 +493,8 @@
         align-items: right;
         right: 0;
         left: auto;
-        bottom: 0;
-        width: 200px;
+        bottom: 100;
+        width: 300px;
         height: auto;
         opacity: 1;
         z-index: 1;
@@ -629,6 +573,116 @@
         margin-bottom: 50px;
     }
 }
+
+/*Tablet Design for Question Section*/
+@media only screen and (max-width:599px) {
+    .question-section {
+        display: flex;
+        align-items: top;
+        width: 100%;
+        z-index: -3;
+        height: auto;
+        max-width: 599px;
+        overflow: hidden;
+    }
+
+    .question-section .question-background {
+        position: absolute;
+        display: flex;
+        width: 100%;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .question-background .left-effect {
+        position: absolute;
+        justify-content: right;
+        align-items: right;
+        right: 0;
+        left: auto;
+        bottom: 0;
+        width: 200px;
+        height: auto;
+        opacity: 1;
+        z-index: 1;
+    }
+
+    .question-section .heading {
+        width: 80%;
+        margin-top: 100px;
+        padding: 10px;
+    }
+
+    .question-section .title {
+        font-size: var(--font-size-xl);
+        line-height: var(--font-size-xl);
+        text-wrap: wrap;
+        text-align: center;
+        margin: 0;
+    }
+
+    .question-section .subtitle p {
+        text-align: center;
+        font-size: var(--font-size-small);
+        line-height: var(--font-size-small);
+        margin-top: 20px;
+    }
+
+    .question-section .form {
+        display: flex;
+        justify-content: center;
+    }
+
+    .question-section .items {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .question-section .item {
+        max-height: 50px;
+        height: auto;
+        width: 100%;
+        padding: 0 0px;
+    }
+
+    .question-section h5 {
+        font-size: var(--font-size-small);
+        font-weight: 200;
+        line-height: var(--font-size-small);
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    #item-2 {
+        display: flex;
+        height: auto;
+        padding: 10px;
+        width: 95%;
+    }
+
+
+    #item-2 .item-title {
+        font-size: var(--font-size-small);
+        line-height: var(--font-size-small);
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #item-2 .item-description {
+        display: flex;
+        font-size: var(--font-size-xsml);
+        max-width: 552px;
+    }
+
+    .question-section .primary-button {
+        margin-bottom: 50px;
+    }
+}
+
 /*Question Section END*/
 
 
@@ -706,7 +760,7 @@
 }
 
 /*Mobile Design for Bottom Banner*/
-@media only screen and (max-width:599px) {
+@media only screen and (max-width:1200px) {
     .bottom-banner {
         display: flex;
         justify-content: center;
