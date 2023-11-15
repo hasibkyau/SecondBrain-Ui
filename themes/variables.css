@@ -68,5 +68,10 @@
   --font-size-small: 16px;
   --font-size-xsml: 12px;
   --font-size-tertiary: 14px;
+
+
+  --font-weight-bold: 700;
+  --font-weight-light: 500;
+  
   
 }

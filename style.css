@@ -13,67 +13,6 @@ body {
     background: var(--color-blue-deep);
 }
 
-h1 {
-    margin: 0;
-    padding: 0;
-    font-family: var(--Baloo2-Regular);
-    font-weight: 700;
-    font-size: 60px;
-    line-height: 70px;
-    text-wrap: nowrap;
-}
-
-h2 {
-    margin: 0;
-    padding: 0;
-    font-family: var(--Baloo2-Bold);
-    font-weight: 700;
-    font-size: 45px;
-    line-height: 70px;
-    text-wrap: nowrap;
-}
-
-h3 {
-    margin: 0;
-    padding: 0;
-    font-weight: 700;
-    font-size: 30px;
-    line-height: 50px;
-    font-family: var(--Baloo2-Bold);
-    text-wrap: nowrap;
-}
-
-h4 {
-    margin: 0;
-    padding: 0;
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 30px;
-    font-family: var(--Baloo2-Regular);
-}
-
-h5 {
-    font-family: var(--Baloo2-Regular);
-}
-
-p {
-    margin: 0;
-    padding: 0;
-    font-family: var(--Montserrat-Regular);
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 30px;
-}
-
-span {
-    margin: 0;
-    padding: 0;
-    font-family: var(--Montserrat-Regular);
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 29px;
-}
-
 .container {
     display: flex;
     flex-direction: column;

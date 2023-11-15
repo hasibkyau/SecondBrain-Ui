@@ -1,6 +1,7 @@
 @import 'variables.css';
 
 .primary-button {
+    cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -14,19 +15,11 @@
     border-radius: 77px;
     background-image: var(--color-button-gradient);
     font-family: var(--Montserrat-Bold);
+    box-shadow: none;
     box-shadow: 0 15px 24px rgba(230, 34, 116, 0.3);
 }
 
-/* Tablet View */
-@media only screen and (max-width: 1200px) {
-    .primary-button {
-        max-width: 110px;
-        font-size: 10px;
-        min-height: 40px;
-        box-shadow: 0 8px 12px rgba(230, 34, 116, 0.3);
-        height: auto;
-    }
-}
+    
 
 
 /* Mobile View========================================== */
@@ -38,8 +31,8 @@
         max-width: 140px;
         font-size: 10px;
         min-height: 50px;
-        box-shadow: 0 8px 12px rgba(230, 34, 116, 0.3);
         height: auto;
         border-radius: 25px;
+        box-shadow: 0 8px 12px rgba(230, 34, 116, 0.3);
     }
 }

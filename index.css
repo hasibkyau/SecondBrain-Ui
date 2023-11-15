@@ -634,169 +634,110 @@
 
 /*Footer Banner Start ====================================================================*/
 .bottom-banner {
-    position: relative;
-    height: 664px;
-    margin-top: 0px;
     display: flex;
-    justify-content: left;
+    justify-content: center;
     align-items: center;
-}
-
-.bottom-banner .side-box {
-    width: 80%;
-    position: relative;
-    line-height: var(--font-size-medium);
-    text-align: left;
-    left: 0;
-}
-
-.bottom-banner .bottom-banner-title {
-    color: var(--color-white);
-    font-family: var(--font-primary-en);
-    font-size: var(--font-size-small);
-    line-height: var(--font-size-small);
-    max-width: 320px;
-    /* 122.222% */
-}
-
-.bottom-banner .side-box .bottom-banner-description {
-    color: #FFF;
-    max-width: 320px;
-    /* P Tag 16 */
-    font-family: var(--font-secondary-en);
-    font-size: var(--font-size-small);
-    line-height: var(--font-size-small);
-    /* 187.5% */
-}
-
-.bottom-banner .primary-button {
-    /* margin-top: 25px; */
-}
-/*Bottom Banner Mobile Desing*/
-.bottom-banner {
-    position: relative;
-    /* height: 664px; */
-    /* margin-top: 102px; */
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
     padding-top: 102px;
-    display: flex;
-    justify-content: left;
-    align-items: center;
 }
 
-.bottom-banner .side-box {
-    position: relative;
-    line-height: var(--font-size-medium);
-    text-align: left;
-    left: 0;
-}
 
-.bottom-banner .bottom-wall {
+.bottom-banner .left {
     position: absolute;
-    right: -10px;
+    top: 102;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    margin: 0 auto;
 }
 
-.bottom-banner .bottom-banner-title {
-    color: var(--color-white);
-    font-family: var(--font-primary-en);
-    font-size: 40px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 55px;
+.bottom-banner .text-container{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+.bottom-banner .title{
     margin: 0;
 
-    /* 122.222% */
+    color: var(--color-white);
+    font-family: var(--Baloo-2);
+    font-size: var(--font-size-title);
+    line-height: var(--font-size-title);
+    font-weight: var(--font-weight-bold);
+    line-height: 55px;
 }
 
-.bottom-banner .side-box .bottom-banner-description {
-    color: #FFF;
-    /* P Tag 16 */
-    font-family: var(--font-secondary-en);
+.bottom-banner .description{
+    margin: 0;
+    margin-top: 13px;
+    color: var(--color-white);
+    font-family: var(--Montserrat-ExtraLight);
     font-size: var(--font-size-small);
-    ;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 30px;
-    /* 187.5% */
+    line-height: var(--font-size-xl);
+    font-weight: var(--font-weight-light);
 }
 
-.bottom-banner .primary-button {
-    margin-top: 25px;
+.bottom-banner .right{
+    width: 100%;
+    height: auto;
+    max-width: 995px;
+    max-height: 664px;
+    flex-shrink: 0;
+    padding: 0;
+    margin: 0;
 }
 
-/*Tablet Design for Bottom Banner*/
-@media only screen and (max-width:1200px) {
-    .bottom-banner {
-        position: relative;
-        height: auto;
-        max-width: 1200px;
-        overflow: hidden;
-    }
+.bottom-banner .right img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
 
-    .bottom-banner .side-box {
-        width: 80%;
-        position: relative;
-    }
-
-    /*Bottom Banner Mobile Desing*/
-    .bottom-banner .bottom-wall {
-        width: 100%;
-        position: absolute;
-        right: 0;
-        opacity: 0.7;
-    }
-
-    .bottom-banner .bottom-banner-title {
-        font-size: var(--font-size-xl);
-        line-height: var(--font-size-xl);
-        padding: 20px 0;
-        max-width: 350px;
-    }
-
-    .bottom-banner .bottom-banner-description {
-        max-width: 350px;
-        font-size: var(--font-size-xsml);
-        line-height: var(--font-size-xsml);
-    }
-
-    .bottom-banner .primary-button{
-        margin:50px 0;
-    }
+.bottom-banner .primary-button{
+    margin-top: 33px;
 }
 
 /*Mobile Design for Bottom Banner*/
 @media only screen and (max-width:599px) {
     .bottom-banner {
-        position: relative;
-        height: auto;
-        max-width: 599px;
-        overflow: hidden;
-    }
-
-    .bottom-banner .side-box {
-        width: 80%;
-        position: relative;
-    }
-
-    /*Bottom Banner Mobile Desing*/
-    .bottom-banner .bottom-wall {
-        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         width: 100%;
-        width: 599px;
-        height: auto;
-        right: 0;
+        display: grid;
+        grid-template-columns: 1fr;
+        padding-top: 51px;
     }
 
-    .bottom-banner .bottom-banner-title{
+    .bottom-banner .left {
+        position: relative;
+    }
+
+    .bottom-banner .title {
         font-size: var(--font-size-xl);
         line-height: var(--font-size-xl);
-        padding: 20px 0;
-        max-width: 350px;
+        font-weight: var(--font-weight-bold);
     }
 
-    .bottom-banner .bottom-banner-description{
-        max-width: 350px;
+    .bottom-banner .description {
+        margin: 0;
+        margin-top: 13px;
+        color: var(--color-white);
+        font-family: var(--Montserrat-ExtraLight);
         font-size: var(--font-size-xsml);
-        line-height: var(--font-size-xsml);
+        line-height: var(--font-size-small);
+        font-weight: var(--font-weight-light);
+    }
+
+    .bottom-banner .primary-button {
+        margin-top: 23px;
     }
 }
 /*Bottom Banner End*/
@@ -804,19 +745,28 @@
 
 
 /*Bottom Card Start ===============================================================*/
+.bottom-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .bottom-card .card-container {
     margin-top: -99px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     gap: 30px;
 }
 
 .bottom-card .card {
-    width: 100%;
     width: 358px;
+    margin: 0;
+    padding: 0;
     height: 216px;
     border-radius: 7px;
+
     border: 1px solid var(--color-pink-purple);
     background: var(--color-blue-background);
     border-image: linear-gradient(to right, var(--color-border-primary), var(--color-pink), var(--color-yellow)) 30;
@@ -828,65 +778,26 @@
     font: var(--Montserrat-ExtraLight);
     color: var(--color-white);
     font-size: var(--font-size-small);
-    ;
+
     font-style: normal;
     font-weight: 200;
     line-height: 30px;
 }
 
-/*Tablet Design for Bottom Card*/
-@media only screen and (max-width:1200px) {
-    .bottom-card{
-        width: 100%;
-        max-width: 1200px;
-        overflow: hidden;
-    }
-
-    .bottom-card .card-container {
-        margin-top: 50px;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(3, 1fr);
-        gap: 30px;
-    }
-
-    .bottom-card .card {
-        width: 200px;
-        height: 216px;
-        border-radius: 7px;
-        border: 1px solid var(--color-pink-purple);
-        background: var(--color-blue-background);
-        border-image: linear-gradient(to right, var(--color-border-primary), var(--color-pink), var(--color-yellow)) 30;
-        border-width: 1px;
-        border-style: solid;
-    }
-}
 
 @media only screen and (max-width:599px) {
-    .bottom-card{
-        max-width: 599px;
-        overflow: hidden;
-    }
 
     .bottom-card .card-container {
-        margin-top: 20px;
-        width: 80%;
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(6, 1fr);
-        gap: 30px;
+        margin-top: -45px;
     }
 
     .bottom-card .card {
         width: 100%;
-        max-width: 260px;
-        max-height: 146px;
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+        height: 216px;
         border-radius: 7px;
-        border: 1px solid var(--color-pink-purple);
-        background: var(--color-blue-background);
-        border-image: linear-gradient(to right, var(--color-border-primary), var(--color-pink), var(--color-yellow)) 30;
-        border-width: 1px;
-        border-style: solid;
     }
 }
 /*Bottom Card End*/
