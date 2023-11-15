@@ -153,7 +153,7 @@
 
 
 /* Mobile View =====================================================*/
-@media only screen and (max-width: 599px) {
+@media only screen and (max-width: 1200px) {
     .banner-container {
         display: flex;
         justify-content: center;
