@@ -1,38 +1,8 @@
 @import 'variables.css';
 
-.nav-bar {
-    position: absolute;
-    top: 19px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    max-width: 1600px;
-}
-
-.nav-sub-container{
-    width: 80%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-.nav-bar .right{
-    display: flex;
-    justify-content: right;
-    width: 100%;
-}
 
 
-.nav-bar .left{
-    width: 227px;
-    display: flex;
-    justify-content: left;
-    justify-content: center;
-    align-items: center;
-}
-
-
-@media only screen and (max-width:599px) {
+/* @media only screen and (max-width:599px) {
 
     .nav-bar .left {
             width: 180px;
@@ -59,4 +29,4 @@
         height: 30px;
         font-size: 10px;
     }
-}
+} */
